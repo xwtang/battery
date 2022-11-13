@@ -3,7 +3,7 @@
 ## ###############
 ## Variables
 ## ###############
-binfolder=/usr/local/bin
+binfolder=/opt/homebrew/bin
 visudo_path=/private/etc/sudoers.d/battery
 configfolder=$HOME/.battery
 pidfile=$configfolder/battery.pid

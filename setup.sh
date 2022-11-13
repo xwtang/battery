@@ -8,7 +8,7 @@ echo -e "####################################################################\n\
 
 # Set environment variables
 tempfolder=~/.battery-tmp
-binfolder=/usr/local/bin
+binfolder=/opt/homebrew/bin
 mkdir -p $tempfolder
 
 # Set script value
@@ -37,7 +37,7 @@ sudo chmod u+x $binfolder/smc
 # Write battery function as executable
 bateryfolder="$tempfolder/battery"
 echo "[ 5/9 ] Cloning battery repository"
-git clone --depth 1 https://github.com/actuallymentor/battery.git $bateryfolder &> /dev/null
+git clone --depth 1 https://github.com/xtang/battery.git $bateryfolder &> /dev/null
 echo "[ 6/9 ] Writing script to $binfolder/battery for user $calling_user"
 sudo cp $bateryfolder/battery.sh $binfolder/battery
 sudo chown $calling_user $binfolder/battery
